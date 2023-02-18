@@ -29,7 +29,10 @@ export default function PostItem({ post }) {
         <ImgWrap>
           {post?.imgUrl ? <ImgWrap /> : <ImgWrapTWo />}
           {post?.imgUrl && (
-            <Img src={`http://localhost:45056/${post.imgUrl}`} alt="img" />
+            <Img
+              src={`https://art--blog.herokuapp.com/api/${post.imgUrl}`}
+              alt="img"
+            />
           )}
         </ImgWrap>
         <UserWrap>

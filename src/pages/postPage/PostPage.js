@@ -117,7 +117,7 @@ export default function PostPage() {
               {post?.imgUrl ? <ImgWrap2 /> : <ImgWrapTwo2 />}
               {post?.imgUrl && (
                 <ImgPost
-                  src={`http://localhost:45056/${post.imgUrl}`}
+                  src={`https://art--blog.herokuapp.com/api/${post.imgUrl}`}
                   alt="img"
                 />
               )}
