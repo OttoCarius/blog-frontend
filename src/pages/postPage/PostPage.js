@@ -70,7 +70,6 @@ export default function PostPage() {
     try {
       const postId = params.id;
       dispatch(createComment({ postId, comment }));
-      // toast("Коментар не може бути порожнім");
       setComment("");
     } catch (error) {
       console.log(error);
@@ -118,7 +117,7 @@ export default function PostPage() {
               {post?.imgUrl ? <ImgWrap2 /> : <ImgWrapTwo2 />}
               {post?.imgUrl && (
                 <ImgPost
-                  src={`http://localhost:3002/${post.imgUrl}`}
+                  src={`https://art--blog.herokuapp.com/${post.imgUrl}`}
                   alt="img"
                 />
               )}

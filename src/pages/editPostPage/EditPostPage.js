@@ -72,7 +72,7 @@ export default function EditPostPage() {
         <ImgWraper>
           {oldImage && (
             <img
-              src={`http://localhost:3002/${oldImage}`}
+              src={`https://art--blog.herokuapp.com/${oldImage}`}
               alt={oldImage.name}
             />
           )}

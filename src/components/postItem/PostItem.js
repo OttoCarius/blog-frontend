@@ -17,9 +17,6 @@ import {
   CommentsBtn,
   NoPost,
 } from "./PostItem.styled";
-// import "./styles.css";
-
-//  {post?.imgUrl ? "image-wrap" : "image-wrap-two"}>
 
 export default function PostItem({ post }) {
   if (!post) {
@@ -32,7 +29,10 @@ export default function PostItem({ post }) {
         <ImgWrap>
           {post?.imgUrl ? <ImgWrap /> : <ImgWrapTWo />}
           {post?.imgUrl && (
-            <Img src={`http://localhost:3002/${post.imgUrl}`} alt="img" />
+            <Img
+              src={`https://art--blog.herokuapp.com/${post.imgUrl}`}
+              alt="img"
+            />
           )}
         </ImgWrap>
         <UserWrap>
