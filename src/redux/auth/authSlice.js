@@ -9,7 +9,7 @@ const initialState = {
 };
 
 export const registerUser = createAsyncThunk(
-  "/auth/registerUser",
+  "auth/registerUser",
   async ({ username, password }) => {
     try {
       const { data } = await axios.post("/auth/register", {
@@ -27,7 +27,7 @@ export const registerUser = createAsyncThunk(
 );
 
 export const loginUser = createAsyncThunk(
-  "/auth/loginUser",
+  "auth/loginUser",
   async ({ username, password }) => {
     try {
       const { data } = await axios.post("/auth/login", {
@@ -44,7 +44,7 @@ export const loginUser = createAsyncThunk(
   }
 );
 
-export const getMe = createAsyncThunk("/auth/loginUser", async () => {
+export const getMe = createAsyncThunk("auth/loginUser", async () => {
   try {
     const { data } = await axios.get("/auth/me");
     return data;
