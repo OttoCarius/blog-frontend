@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://art-blog.onrender.com/api",
-  validateStatus: () => true,
+  baseURL: "https://art-blog.onrender.com/api/",
+  // validateStatus: () => true,
 });
 
 instance.interceptors.request.use((config) => {
