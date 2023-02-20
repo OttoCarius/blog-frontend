@@ -72,7 +72,7 @@ export default function EditPostPage() {
         <ImgWraper>
           {oldImage && (
             <img
-              src={`https://art-blog.onrender.com/api${oldImage}`}
+              src={`https://art-blog.onrender.com/api/${oldImage}`}
               alt={oldImage.name}
             />
           )}
