@@ -42,7 +42,6 @@ import {
   BtnComments,
   NoPosts,
 } from "./PostPage.styled";
-import "./styles.css";
 
 export default function PostPage() {
   const [post, setPost] = useState(null);
