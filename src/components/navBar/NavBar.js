@@ -31,7 +31,10 @@ export default function NavBar() {
       <Container>
         <NavRow>
           <div>
-            <NavLinkLogo to="/">Blog</NavLinkLogo>
+            <NavLinkLogo to="/">
+              <span>Art</span>
+              <span>Blog</span>
+            </NavLinkLogo>
           </div>
           <div>
             {isAuth && (

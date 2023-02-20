@@ -20,11 +20,11 @@ export const NavRow = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 25px;
   row-gap: 20px;
   flex-wrap: wrap;
 
-  @media (max-width: 500px) {
+  @media (max-width: 540px) {
     /* justify-content: center; */
     column-gap: 10px;
     row-gap: 10px;
@@ -35,6 +35,11 @@ export const NavLinkLogo = styled(NavLink)`
   margin-right: auto;
   color: white;
   font-size: 24px;
+
+  @media (max-width: 540px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   @media (max-width: 500px) {
     font-size: 20px;
@@ -50,15 +55,22 @@ export const List = styled.ul`
   font-size: 16px;
   font-weight: 500;
 
-  @media (max-width: 420px) {
+  @media (max-width: 540px) {
     column-gap: 20px;
     font-size: 14px;
     font-weight: 500;
     row-gap: 5px;
   }
 
-  @media (max-width: 340px) {
+  /* @media (max-width: 420px) {
     column-gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    row-gap: 5px;
+  } */
+
+  @media (max-width: 352px) {
+    column-gap: 16px;
     font-size: 12px;
     font-weight: 400;
     row-gap: 5px;
