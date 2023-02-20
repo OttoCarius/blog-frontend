@@ -8,9 +8,7 @@ export default function PostsPage() {
 
   const fetchMyPosts = async () => {
     try {
-      const { data } = await axios.get(
-        "https://art-blog.onrender.com/api/posts/user/me"
-      );
+      const { data } = await axios.get("/posts/user/me");
       setPosts(data);
     } catch (error) {
       console.log(error);

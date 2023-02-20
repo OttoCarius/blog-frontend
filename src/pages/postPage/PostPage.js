@@ -85,9 +85,7 @@ export default function PostPage() {
   }, [params.id, dispatch]);
 
   const fetchPost = useCallback(async () => {
-    const { data } = await axios.get(
-      `https://art-blog.onrender.com/api/posts/${params.id}`
-    );
+    const { data } = await axios.get(`/posts/${params.id}`);
     setPost(data);
   }, [params.id]);
 
