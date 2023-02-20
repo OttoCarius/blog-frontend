@@ -28,7 +28,9 @@ export default function EditPostPage() {
   const params = useParams();
 
   const fetchPost = useCallback(async () => {
-    const { data } = await axios.get(`/posts/${params.id}`);
+    const { data } = await axios.get(
+      `https://art-blog.onrender.com/api/posts/${params.id}`
+    );
     setTitle(data.title);
     setText(data.text);
     setOldImage(data.imgUrl);
