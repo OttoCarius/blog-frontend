@@ -2,6 +2,7 @@ import axios from "axios";
 
 const instance = axios.create({
   baseURL: "https://art-blog.onrender.com/api",
+
   validateStatus: () => true,
 });
 
