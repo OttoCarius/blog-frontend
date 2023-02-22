@@ -101,7 +101,7 @@ export default function PostPage() {
   }, [status]);
 
   if (!post) {
-    return <NoPosts>Постів немає</NoPosts>;
+    return <NoPosts>Загрузка...</NoPosts>;
   }
 
   return (
