@@ -20,7 +20,7 @@ import {
 
 export default function PostItem({ post }) {
   if (!post) {
-    return <NoPost>Постів немає</NoPost>;
+    return <NoPost>Загрузка...</NoPost>;
   }
 
   return (
