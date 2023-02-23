@@ -30,7 +30,7 @@ export default function PostItem({ post }) {
           {post?.imgUrl ? <ImgWrap /> : <ImgWrapTWo />}
           {post?.imgUrl && (
             <Img
-              src={`https://art-blog.onrender.com/api/posts${post.imgUrl}`}
+              src={`https://art-blog.onrender.com/${post.imgUrl}`}
               alt="img"
             />
           )}
