@@ -64,7 +64,7 @@ export default function EditPostPage() {
           <FileInput
             type="file"
             onChange={(e) => {
-              setNewImage(e.target.file[0]);
+              setNewImage(e.target.files[0]);
               setOldImage("");
             }}
           />
@@ -72,7 +72,7 @@ export default function EditPostPage() {
         <ImgWraper>
           {oldImage && (
             <img
-              src={`https://art-blog.onrender.com/${oldImage}`}
+              src={`https://art-blog.onrender.com/api/${oldImage}`}
               alt={oldImage.name}
             />
           )}
