@@ -47,10 +47,7 @@ export default function AddPostPage() {
       <Form onSubmit={(e) => e.preventDefault()}>
         <LabelForm>
           Додати фото:
-          <FileInput
-            type="file"
-            onChange={(e) => setImage(e.target.files[0])}
-          />
+          <FileInput type="file" onChange={(e) => setImage(e.target.file[0])} />
         </LabelForm>
         <ImgWraper>
           {image && <img src={URL.createObjectURL(image)} alt={image.name} />}

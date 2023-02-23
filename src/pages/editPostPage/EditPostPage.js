@@ -64,7 +64,7 @@ export default function EditPostPage() {
           <FileInput
             type="file"
             onChange={(e) => {
-              setNewImage(e.target.files[0]);
+              setNewImage(e.target.file[0]);
               setOldImage("");
             }}
           />
