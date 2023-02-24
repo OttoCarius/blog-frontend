@@ -169,7 +169,7 @@ export const TextPost = styled.p`
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 20;
+  -webkit-line-clamp: 40;
   margin-bottom: 15px;
 
   @media (max-width: 673px) {
