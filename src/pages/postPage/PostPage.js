@@ -114,12 +114,7 @@ export default function PostPage() {
           <PostPageImgWrap>
             <ImgWrap2>
               {post?.imgUrl ? <ImgWrap2 /> : <ImgWrapTwo2 />}
-              {post?.imgUrl && (
-                <ImgPost
-                  src={`https://art-blog.onrender.com/${post.imgUrl}`}
-                  alt="img"
-                />
-              )}
+              {post?.imgUrl && <ImgPost src={`${post.imgUrl}`} alt="img" />}
             </ImgWrap2>
             <UserWrap>
               <UserName>{post.username}</UserName>

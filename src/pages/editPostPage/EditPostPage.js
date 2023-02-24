@@ -70,12 +70,7 @@ export default function EditPostPage() {
           />
         </LabelForm>
         <ImgWraper>
-          {oldImage && (
-            <img
-              src={`https://art-blog.onrender.com/${oldImage}`}
-              alt={oldImage.name}
-            />
-          )}
+          {oldImage && <img src={`${oldImage}`} alt={oldImage.name} />}
           {newImage && (
             <img src={URL.createObjectURL(newImage)} alt={newImage.name} />
           )}

@@ -28,12 +28,7 @@ export default function PostItem({ post }) {
       <PostItemContainer>
         <ImgWrap>
           {post?.imgUrl ? <ImgWrap /> : <ImgWrapTWo />}
-          {post?.imgUrl && (
-            <Img
-              src={`https://art-blog.onrender.com/${post.imgUrl}`}
-              alt="img"
-            />
-          )}
+          {post?.imgUrl && <Img src={`${post.imgUrl}`} alt="img" />}
         </ImgWrap>
         <UserWrap>
           <UserName>{post.username}</UserName>
