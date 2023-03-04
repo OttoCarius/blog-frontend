@@ -21,7 +21,12 @@ export default function MainPage() {
   }, [dispatch]);
 
   if (!posts.length) {
-    return <NoPosts>Постів немає</NoPosts>;
+    return (
+      <NoPosts>
+        Зачекайте, будь ласка, 20-30 секунд... У зв'язку з тим, що на сайті
+        давно не було ніяких запитів, сервер знаходиться у сні.
+      </NoPosts>
+    );
   }
 
   return (
