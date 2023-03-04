@@ -52,8 +52,13 @@ export const PopularPost = styled.div`
 `;
 
 export const NoPosts = styled.div`
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   color: antiquewhite;
   padding: 40px 0;
+
+  @media (max-width: 673px) {
+    font-size: 14px;
+    padding: 40px 10px;
+  }
 `;
