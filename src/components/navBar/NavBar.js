@@ -31,7 +31,7 @@ export default function NavBar() {
       <Container>
         <NavRow>
           <div>
-            <NavLinkLogo to="/">
+            <NavLinkLogo to="/" end>
               <span>Art</span>
               <span>Blog</span>
             </NavLinkLogo>
